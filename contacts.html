@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - М2-ГРУПП</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       .error-message {
+            color: #ff3333;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        
+        .form-group input.error, 
+        .form-group textarea.error {
+            border-color: #ff3333;
+        }
+        
+        .success-message {
+            color: #28a745;
+            font-size: 16px;
+            margin-top: 15px;
+            display: none;
+        }
+        .contact-container {
+            display: grid;
+            align-content: space-between;
+          
+        
+        }
+        .contact-page {
+            padding: 120px 0 80px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>М2-ГРУПП</h1>
+                <p>Асфальтирование в Оренбурге и Оренбургской области</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                  
+                    <li><a href="about.html">О нас</a></li>
+                    <li class="active"><a href="contacts.html">Контакты</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-page">
+        <div class="container">
+            <h2 class="fade-in">Контакты</h2>
+            <p class="fade-in">Свяжитесь с нами удобным для вас способом или оставьте заявку, и мы перезвоним вам в ближайшее время.</p>
+            
+            <div class="contact-container">
+                <div class="contact-info fade-in-up">
+                    <h3>Наши контакты</h3>
+                    
+                    <p><i class="fas fa-phone"></i> +7 (903) 398-39-59</p>
+                    <p><i class="fas fa-phone"></i> 8 (3532) 555-155</p>
+                    <p><i class="fas fa-envelope"></i> s-apo@mail.ru</p>
+                    <p><i class="fas fa-map-marker-alt"></i> г.Оренбург, ул.Терешковой 263/2</p>
+                    
+                    <h3>Мы в социальных сетях</h3>
+                    <div class="social-links">
+                        <a href="https://vk.com/ck_m2" target="_blank" aria-label="ВКонтакте">
+                            <img src="images/icons8-вконтакте-48.png" alt="ВКонтакте">
+                        </a>
+                        <a href="https://www.instagram.com/m2_group_56?igsh=eWlpeHZ2M2l0bHVv&utm_source=qr" target="_blank" aria-label="Instagram">
+                            <img src="images/icons8-instagram-48.png" alt="Instagram">
+                        </a>
+                        <a href="https://wa.me/79033983959" target="_blank" aria-label="WhatsApp">
+                            <img src="images/icons8-whatsapp-48.png" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form fade-in-up">
+        <h3>Отправить сообщение</h3>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Ваше имя *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="message">Сообщение *</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Отправить</button>
+            <div id="formSuccess" class="success-message">
+                Спасибо за сообщение! Мы свяжемся с вами в ближайшее время.
+            </div>
+        </form>
+    </div>
+            
+            <div class="map fade-in">
+                <h3>Наш офис на карте</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.957118557967!2d55.16284807663671!3d51.78800767181244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x417bf5d1e52dab8d%3A0xa30d66ef3c8de067!2z0YPQuy4g0KLQtdGA0LXRiNC60L7QstC-0LksIDI2Mywg0J7RgNC10L3QsdGD0YDQsywg0J7RgNC10L3QsdGD0YDQs9GB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgNDYwMDUw!5e0!3m2!1sru!2s!4v1652376985701!5m2!1sru!2s" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h3>М2-ГРУПП</h3>
+                <p>Профессиональное асфальтирование в Оренбурге и области. Качество, надежность, гарантия.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-phone"></i> +7 (903) 398-39-59</p>
+                <p><i class="fas fa-phone"></i> 8 (3532) 555-155</p>
+                <p><i class="fas fa-envelope"></i> s-apo@mail.ru</p>
+                
+            </div>
+            <div class="footer-column">
+                <h3>Меню</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                   
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Социальные сети</h3>
+                <div class="social-links">
+                    <a href="https://vk.com/ck_m2" target="_blank" aria-label="ВКонтакте">
+                        <img src="images/icons8-вконтакте-48.png" alt="ВКонтакте">
+                    </a>
+                    <a href="https://www.instagram.com/m2_group_56?igsh=eWlpeHZ2M2l0bHVv&utm_source=qr" target="_blank" aria-label="Instagram">
+                        <img src="images/icons8-instagram-48.png" alt="Instagram">
+                    </a>
+                    <a href="https://wa.me/79033983959" target="_blank" aria-label="WhatsApp">
+                        <img src="images/icons8-whatsapp-48.png" alt="WhatsApp">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 М2-ГРУПП. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Validate form
+            let isValid = true;
+            const requiredFields = this.querySelectorAll('[required]');
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.classList.add('error');
+                    
+                    if (!field.nextElementSibling || !field.nextElementSibling.classList.contains('error-message')) {
+                        const errorMessage = document.createElement('p');
+                        errorMessage.classList.add('error-message');
+                        errorMessage.textContent = 'Это поле обязательно для заполнения';
+                        field.parentNode.insertBefore(errorMessage, field.nextSibling);
+                    }
+                } else {
+                    field.classList.remove('error');
+                    if (field.nextElementSibling && field.nextElementSibling.classList.contains('error-message')) {
+                        field.nextElementSibling.remove();
+                    }
+                }
+            });
+            
+            if (isValid) {
+                // Simulate form submission success
+                alert('Спасибо за сообщение! Мы свяжемся с вами в ближайшее время.');
+                this.reset();
+            }
+        });
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Validate form
+            let isValid = true;
+            const requiredFields = this.querySelectorAll('[required]');
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.classList.add('error');
+                    
+                    if (!field.nextElementSibling || !field.nextElementSibling.classList.contains('error-message')) {
+                        const errorMessage = document.createElement('p');
+                        errorMessage.classList.add('error-message');
+                        errorMessage.textContent = 'Это поле обязательно для заполнения';
+                        field.parentNode.insertBefore(errorMessage, field.nextSibling);
+                    }
+                } else {
+                    field.classList.remove('error');
+                    if (field.nextElementSibling && field.nextElementSibling.classList.contains('error-message')) {
+                        field.nextElementSibling.remove();
+                    }
+                }
+            });
+            
+            if (isValid) {
+                // Собираем данные формы
+                const formData = {
+                    name: document.getElementById('name').value,
+                    phone: document.getElementById('phone').value,
+                    email: document.getElementById('email').value,
+                    message: document.getElementById('message').value
+                };
+                
+                // Отправляем данные на сервер
+                fetch('http://localhost:3000/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Ошибка сети');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    // Показываем сообщение об успехе
+                    document.getElementById('formSuccess').style.display = 'block';
+                    // Сбрасываем форму
+                    document.getElementById('contactForm').reset();
+                    // Скрываем сообщение через 5 секунд
+                    setTimeout(() => {
+                        document.getElementById('formSuccess').style.display = 'none';
+                    }, 5000);
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    alert('Произошла ошибка при отправке формы. Пожалуйста, попробуйте позже.');
+                });
+            }
+        });
+        
+    </script>
+</body>
+</html>
